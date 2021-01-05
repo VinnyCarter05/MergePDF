@@ -1,0 +1,16 @@
+DEBUG:root:PDF_count = 3
+DEBUG:root:list widget PDF 0 = Item A
+DEBUG:root:list widget PDF 1 = Item B
+DEBUG:root:list widget PDF 2 = Item C
+DEBUG:root:PDF_count = 3
+DEBUG:root:list widget PDF 0 = Item A
+DEBUG:root:list widget PDF 1 = Item B
+DEBUG:root:list widget PDF 2 = Item C
+DEBUG:root:PDF_count = 3
+DEBUG:root:list widget PDF 0 = Item A
+DEBUG:root:list widget PDF 1 = Item B
+DEBUG:root:list widget PDF 2 = Item C
+DEBUG:root:PDF_count = 3
+DEBUG:root:list widget PDF 0 = Item A
+DEBUG:root:list widget PDF 1 = Item C
+DEBUG:root:list widget PDF 2 = Item B
