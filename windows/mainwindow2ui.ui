@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>mfmc Merge PDF</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QListWidget" name="listWidget_PDF">
+      <item>
+       <property name="text">
+        <string>Item A</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ebrima</family>
+         <pointsize>14</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="icon">
+        <iconset>
+         <activeon>:/images/images/up-and-down.jpg</activeon>
+        </iconset>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Item B</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ebrima</family>
+         <pointsize>14</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="icon">
+        <iconset>
+         <activeon>:/images/images/up-and-down.jpg</activeon>
+        </iconset>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Item C</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ebrima</family>
+         <pointsize>14</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="icon">
+        <iconset>
+         <activeon>:/images/images/up-and-down.jpg</activeon>
+        </iconset>
+       </property>
+      </item>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionAdd_PDF"/>
+    <addaction name="actionMerge_and_Save_PDF"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextBesideIcon</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionQuit"/>
+   <addaction name="separator"/>
+   <addaction name="actionAdd_PDF"/>
+   <addaction name="actionMerge_and_Save_PDF"/>
+  </widget>
+  <action name="actionAdd_PDF">
+   <property name="icon">
+    <iconset resource="mainwindow_rc.qrc">
+     <normaloff>:/images/images/PDFfile.png</normaloff>:/images/images/PDFfile.png</iconset>
+   </property>
+   <property name="text">
+    <string>Add PDF</string>
+   </property>
+   <property name="iconText">
+    <string>Add PDF</string>
+   </property>
+  </action>
+  <action name="actionMerge_and_Save_PDF">
+   <property name="icon">
+    <iconset resource="mainwindow_rc.qrc">
+     <normaloff>:/images/images/PDFdownload.png</normaloff>:/images/images/PDFdownload.png</iconset>
+   </property>
+   <property name="text">
+    <string>Merge and Save PDF</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="icon">
+    <iconset resource="mainwindow_rc.qrc">
+     <normaloff>:/images/images/quit.png</normaloff>:/images/images/quit.png</iconset>
+   </property>
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="mainwindow_rc.qrc"/>
+ </resources>
+ <connections/>
+</ui>
