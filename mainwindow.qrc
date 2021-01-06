@@ -5,4 +5,7 @@
     <file>images/PDFdownload.png</file>
     <file>images/PDFfile.png</file>
   </qresource>
+  <qresource prefix="newPrefix">
+    <file>images/mfmclogo.ico</file>
+  </qresource>
 </RCC>

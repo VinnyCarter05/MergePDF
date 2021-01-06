@@ -1,6 +1,7 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
-from windows.mainwindow_ui import Ui_MainWindow
+from mainwindow_ui import Ui_MainWindow
 import logging, os
+from PyPDF2 import PdfFileMerger
 
 class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
@@ -31,6 +32,9 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         # connect to slots
         self.dropFile_signal.connect(self.add_drop_to_list)
         self.delete_list_item_signal.connect(self.delete_list_item)
+        self.actionAdd_PDF.triggered.connect(self.open_files)
+        self.actionMerge_and_Save_PDF.triggered.connect(self.save_file)
+        self.actionQuit.triggered.connect(self.exit)
 
     def get_PDF_list_and_PDF_count(self):
         self.PDF_count = self.listWidget_PDF.count()
@@ -51,7 +55,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
     def add_drop_to_list(self, filename):
         try:
-            _, filename = filename.split('///')
+            _, filename = filename.split('///') #network path
         except:
             try:
                 _, filename = filename.split(':')
@@ -63,11 +67,14 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
     def addFormattedItem(self, filename):
         item = QtWidgets.QListWidgetItem()
         font = QtGui.QFont()
-        font.setFamily("Century Gothic")
+        font.setFamily("Ebrima")
         font.setPointSize(14)
         font.setBold(True)
         font.setWeight(75)
         item.setFont(font)
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap(":/images/images/up-and-down.jpg"), QtGui.QIcon.Active, QtGui.QIcon.On)
+        item.setIcon(icon)
         item.setText(filename)
         self.listWidget_PDF.addItem(item)
 
@@ -80,7 +87,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             ,"Files to Merge", "","PDF files (*.pdf);; All Files (*)", options=options)
         for filename in fileNames:
             if (os.path.splitext(filename)[1].lower()) == ".pdf":
-                self.listWidget_PDF.addItem(filename)
+                self.addFormattedItem(filename)
 
     def save_file (self):
         options = QtWidgets.QFileDialog.Options()
@@ -92,15 +99,25 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             self.merge_PDF()
 
     def merge_PDF(self):
-        pass
+        merger = PdfFileMerger()
+        self.get_PDF_list_and_PDF_count()
+
+        for pdf in self.PDF_list:
+            merger.append(pdf)
+
+        merger.write(f"{self.save_filename}")
+        merger.close
+
+    def exit(self):
+            logging.debug("Escape:  ")
+            self.get_PDF_list_and_PDF_count()
+            self.close()
 
 
 
     def keyPressEvent(self, e):
         if e.key() == QtCore.Qt.Key_Escape:
-            logging.debug("Escape:  ")
-            self.get_PDF_list_and_PDF_count()
-            self.close()
+            self.exit()
         if e.key() == QtCore.Qt.Key_Delete:
             self.delete_list_item_signal.emit()
         if e.key() == QtCore.Qt.Key_Insert:

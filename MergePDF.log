@@ -244,3 +244,59 @@ DEBUG:root:PDF_count = 3
 DEBUG:root:list widget PDF 0 = Item A
 DEBUG:root:list widget PDF 1 = Item B
 DEBUG:root:list widget PDF 2 = Item C
+DEBUG:root:PDF_count = 3
+DEBUG:root:list widget PDF 0 = Item A
+DEBUG:root:list widget PDF 1 = Item B
+DEBUG:root:list widget PDF 2 = Item C
+DEBUG:root:PDF_count = 3
+DEBUG:root:list widget PDF 0 = Item A
+DEBUG:root:list widget PDF 1 = Item B
+DEBUG:root:list widget PDF 2 = Item C
+DEBUG:root:PDF_count = 3
+DEBUG:root:list widget PDF 0 = Item A
+DEBUG:root:list widget PDF 1 = Item B
+DEBUG:root:list widget PDF 2 = Item C
+DEBUG:root:PDF_count = 3
+DEBUG:root:list widget PDF 0 = Item A
+DEBUG:root:list widget PDF 1 = Item B
+DEBUG:root:list widget PDF 2 = Item C
+DEBUG:root:save file: C:/Users/Family/Desktop/abc.pdf
+DEBUG:root:PDF_count = 2
+DEBUG:root:list widget PDF 0 = C:/Users/Family/Documents/GitHub/OCR/Faxes/FANI_GHASEM_MRISPINC_20201208.PDF
+DEBUG:root:list widget PDF 1 = C:/Users/Family/Documents/GitHub/OCR/Faxes/fabroa, wilfred.pdf
+DEBUG:root:PDF_count = 3
+DEBUG:root:list widget PDF 0 = Item A
+DEBUG:root:list widget PDF 1 = Item B
+DEBUG:root:list widget PDF 2 = Item C
+DEBUG:root:Escape:  
+DEBUG:root:PDF_count = 3
+DEBUG:root:list widget PDF 0 = Item A
+DEBUG:root:list widget PDF 1 = Item B
+DEBUG:root:list widget PDF 2 = Item C
+DEBUG:root:PDF_count = 0
+DEBUG:root:PDF_count = 0
+DEBUG:root:PDF_count = 0
+DEBUG:root:save file: C:/Users/Family/Desktop/abc.pdf
+DEBUG:root:PDF_count = 3
+DEBUG:root:list widget PDF 0 = C:/Users/Family/Documents/GitHub/OCR/Faxes/chan, tsan cheong.pdf
+DEBUG:root:list widget PDF 1 = C:/Users/Family/Documents/GitHub/OCR/Faxes/fabroa, wilfaed.pdf
+DEBUG:root:list widget PDF 2 = C:/Users/Family/Documents/GitHub/OCR/Faxes/fu, bang hua.pdf
+DEBUG:root:PDF_count = 0
+DEBUG:root:PDF_count = 0
+DEBUG:root:Escape:  
+DEBUG:root:PDF_count = 0
+DEBUG:root:PDF_count = 0
+DEBUG:root:Escape:  
+DEBUG:root:PDF_count = 0
+DEBUG:root:PDF_count = 0
+DEBUG:root:save file: C:/Users/Family/Desktop/abc.pdf
+DEBUG:root:PDF_count = 3
+DEBUG:root:list widget PDF 0 = C:/Users/Family/Documents/GitHub/OCR/Faxes/Chiu, Wai Tak.pdf
+DEBUG:root:list widget PDF 1 = C:/Users/Family/Documents/GitHub/OCR/Faxes/chan, tsan cheong.pdf
+DEBUG:root:list widget PDF 2 = C:/Users/Family/Documents/GitHub/OCR/Faxes/brown ramprasad, anisa.pdf
+DEBUG:root:Escape:  
+DEBUG:root:PDF_count = 3
+DEBUG:root:list widget PDF 0 = C:/Users/Family/Documents/GitHub/OCR/Faxes/Chiu, Wai Tak.pdf
+DEBUG:root:list widget PDF 1 = C:/Users/Family/Documents/GitHub/OCR/Faxes/chan, tsan cheong.pdf
+DEBUG:root:list widget PDF 2 = C:/Users/Family/Documents/GitHub/OCR/Faxes/brown ramprasad, anisa.pdf
+DEBUG:root:PDF_count = 0

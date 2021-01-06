@@ -13,65 +13,14 @@
   <property name="windowTitle">
    <string>mfmc Merge PDF</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="mainwindow.qrc">
+    <normaloff>:/newPrefix/images/mfmclogo.ico</normaloff>:/newPrefix/images/mfmclogo.ico</iconset>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout">
     <item row="0" column="0">
-     <widget class="QListWidget" name="listWidget_PDF">
-      <item>
-       <property name="text">
-        <string>Item A</string>
-       </property>
-       <property name="font">
-        <font>
-         <family>Ebrima</family>
-         <pointsize>14</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="icon">
-        <iconset>
-         <activeon>:/images/images/up-and-down.jpg</activeon>
-        </iconset>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>Item B</string>
-       </property>
-       <property name="font">
-        <font>
-         <family>Ebrima</family>
-         <pointsize>14</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="icon">
-        <iconset>
-         <activeon>:/images/images/up-and-down.jpg</activeon>
-        </iconset>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>Item C</string>
-       </property>
-       <property name="font">
-        <font>
-         <family>Ebrima</family>
-         <pointsize>14</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="icon">
-        <iconset>
-         <activeon>:/images/images/up-and-down.jpg</activeon>
-        </iconset>
-       </property>
-      </item>
-     </widget>
+     <widget class="QListWidget" name="listWidget_PDF"/>
     </item>
    </layout>
   </widget>
@@ -115,7 +64,7 @@
   </widget>
   <action name="actionAdd_PDF">
    <property name="icon">
-    <iconset resource="mainwindow_rc.qrc">
+    <iconset resource="mainwindow.qrc">
      <normaloff>:/images/images/PDFfile.png</normaloff>:/images/images/PDFfile.png</iconset>
    </property>
    <property name="text">
@@ -127,7 +76,7 @@
   </action>
   <action name="actionMerge_and_Save_PDF">
    <property name="icon">
-    <iconset resource="mainwindow_rc.qrc">
+    <iconset resource="mainwindow.qrc">
      <normaloff>:/images/images/PDFdownload.png</normaloff>:/images/images/PDFdownload.png</iconset>
    </property>
    <property name="text">
@@ -136,7 +85,7 @@
   </action>
   <action name="actionQuit">
    <property name="icon">
-    <iconset resource="mainwindow_rc.qrc">
+    <iconset resource="mainwindow.qrc">
      <normaloff>:/images/images/quit.png</normaloff>:/images/images/quit.png</iconset>
    </property>
    <property name="text">
@@ -145,7 +94,7 @@
   </action>
  </widget>
  <resources>
-  <include location="mainwindow_rc.qrc"/>
+  <include location="mainwindow.qrc"/>
  </resources>
  <connections/>
 </ui>
