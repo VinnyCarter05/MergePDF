@@ -111,3 +111,5 @@ MergePDF.log
 __pycache__/mainwindow.cpython-39.pyc
 __pycache__/mfmcMergePDF.cpython-39.pyc
 dist/mfmcMergePDF.exe
+mfmcMergePDF.spec
+__pycache__/mainwindow.cpython-39.pyc
